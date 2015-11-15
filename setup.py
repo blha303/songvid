@@ -10,7 +10,7 @@ setup(
     entry_points = {
         "console_scripts": ['songvid = songvid.songvid:main']
         },
-    version = "1.0.0",
+    version = "1.0.1",
     description = "A tool to create a video with a still image and a given audio track",
     long_description = long_descr,
     author = "Steven Smith",

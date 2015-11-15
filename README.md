@@ -3,6 +3,8 @@ songvid
 
 A tool to create a video with a still image and a given audio track
 
+Needs ffmpeg compiled with `--enable-libfdk-aac` and `--enable-nonfree`
+
 Usage
 -----
 

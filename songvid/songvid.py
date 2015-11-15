@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 def create_video(image="", audio=""):
-    cmd = ["ffmpeg", "-loop", "1", "-i", image, "-i", audio, "-shortest", "-c:v", "libx264", "-tune", "stillimage", "-c:a", "libvo_aacenc", "sv_{}.mp4".format(".".join(audio.split(".")[:-1]))]
+    cmd = ["ffmpeg", "-loop", "1", "-i", image, "-i", audio, "-shortest", "-c:v", "libx264", "-tune", "stillimage", "-c:a", "libfdk_aac", "sv_{}.mp4".format(".".join(audio.split(".")[:-1]))]
     print(cmd)
     outp = subprocess.check_output(cmd)
     print(outp)
